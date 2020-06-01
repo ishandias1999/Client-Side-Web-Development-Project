@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Assignment2</title>
+ <link href="CSS/styles.css" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+ <!-- This is the parent (flex container) -->
+ <div class="header-container">
+   <!-- Creating child elements (Flex items) -->
+   <h1>Gallery</h1>
+   <nav class="nav-items">
+    <a href = "#">Abstract</a>
+		<a href = "#">Grafiti </a>
+		<a href = "#">Classic </a>
+   </nav>
+ </div>
+
+
+<!-- This is the row container it contains the 4 labels with background images as its flex items -->
+ <div class="row">
+
+
+    <!-- div container for first image and label-->
+     <div id="first-pic"><p>Python</p></div>
+
+
+
+    <!-- div container for second image and label-->
+     <div id="second-pic"><p>Html</p></div>
+
+
+
+     <!-- div container for third image and label-->
+     <div id="third-pic"><p>Javascript</p></div>
+
+
+     <!-- div container for fourth image and label-->
+     <div id="fourth-pic"><p>Ruby</p></div>
+</div>
+
+
+<!-- This is the Menu for the 2 games that had to implemented  -->
+ <div id="menu">
+   <ul>
+     <li> <!--this is the button for the first game -->
+       <button class="game1btn">Card Game</button>
+     </li>
+     <li> <!-- this is the button foe the second game -->
+       <button class="game2btn">Game 2</button>
+     </li>
+   </ul> <!--this is the link so when you click it the menu should come out and go back into the left -127px -->
+   <a class="menuButton" href = "#">Games</a>
+ </div>
+
+<!-- This is the overlay for the second game -->
+ <div id="secondGame">
+   <div>
+     <p>Coming Soon</p> <!-- This is the close button which closes the overlay-->
+     <button class="closeGame">Close</button>
+   </div>
+ </div>
+
+ <!-- This overlay is for the card game  -->
+ <div class="overlay">
+   <div class="overlay-content">
+     <p>Card Game</p>
+     <div class="deckContainer">
+       <img id="machine" src="cards/cards/back.png"> <!-- image for machine card -->
+       <img id="player" src="cards/cards/back.png"> <!-- image for player card  -->
+     </div>
+     <button class="drawCardBtn">Draw Card</button> <!-- this button will display a player card chosen randomly -->
+   </div>
+ </div>
+
+ <!-- this is the results Overlay where the result of the card game will be -->
+ <div id="resOverlay">
+   <div>
+     <p id="result">Your Result</p>
+     <button id="close_overlay">Close</button> <!--closes the result overlay and the card game overlay -->
+     <button id="tryAgain">Try Again</button> <!-- allows the user to play another game -->
+   </div>
+ </div>
+
+
+<!-- footer container with all the footer items-->
+ <div class="footer-container">
+   <ul>
+		<li> <a href = "">Home</a></li>
+		<li> <a href = "">About Us</a></li>
+		<li> <a href = "">Contact Us</a></li>
+		<li> <a href = "">FAQ</a></li>
+	</ul>
+
+
+	<ul>
+		<li> <a href = "">Architecture</a></li>
+		<li> <a href = "">Computer</a></li>
+		<li> <a href = "">Media</a></li>
+    <li> <a href = "">Animation</a></li>
+	</ul>
+
+
+	<ul>
+		<li> <a href = "">Mosiac</a></li>
+		<li> <a href = "">Tapestry</a></li>
+		<li> <a href = "">Graphic</a></li>
+    <li> <a href = "">Video</a></li>
+	</ul>
+
+  <ul>
+    <li> <a href = "">Folk</a></li>
+    <li> <a href = "">Religeous</a></li>
+    <li> <a href = "">Ceramics</a></li>
+    <li> <a href = "">Drawing</a></li>
+  </ul>
+
+ </div>
+
+ <script src="Javascript/script.js"></script></script>
+
+</body>
+</html>
